@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select name="Feedback Type" id="">
+            <option value="Suggestions">Suggestions</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Tickets">Tickets</option>
+        </select>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="10" max="100" required>
+        </div>
+        <div>
+            <label for="email">E-Mail:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="8" maxlength="30">
+        </div>
+        <div>
+            <textarea name="comments" id="">Enter your comments...</textarea>
+        </div>
+        <div>
+            <label for="Website">Personal Website</label>
+            <input type="url" name="Website" id="Website">
+        </div>
+        <p>Rate Our Website</p>
+        <input type="radio" /> 5
+        <input type="radio" /> 4
+        <input type="radio" /> 3
+        <input type="radio" /> 2
+        <input type="radio" /> 1
+        <div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">I agree to the terms and condition</label>
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
