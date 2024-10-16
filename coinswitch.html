@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinSwitch</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-box {
+            display: flex;
+            gap: 50px;
+        }
+
+        .menu-box > button {
+            background-color: rgb(17, 239, 17);
+            color: white;
+            border-radius: 10%;
+            width: 120px;
+            margin-right: 100px;
+            height: 40px;
+        }
+
+        .menu-box > div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .body-container {
+            padding: 40px;
+        }
+
+        .body-container > div:nth-child(2) {
+            font-size: 40px;
+        }
+
+        .body-container > div:nth-child(2) > h1:nth-child(2) {
+            color: blue;
+        }
+
+        .body-container > div:nth-child(3) {
+            font-size: 30px;
+            color: rgb(79, 77, 77);
+            font-weight: bold;
+        }
+        .body-container > div:nth-child(4) > button {
+            background-color: black;
+            color: white;
+            border-radius: 5%;
+            width: 120px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="coin-box">
+            <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="">
+        </div>
+        <div class="menu-box">
+            <div>
+                <p>Products</p>
+                <img width="10px" height="10px" src="data:image/jpeg;base64,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" alt="">
+            </div>
+            <p>Coins</p>
+            <p>Ventures</p>
+            <p>Blog</p>
+            <div>
+                <p>Company</p>
+                <img width="10px" height="10px" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIQAyAMBIgACEQEDEQH/xAAaAAEBAAMBAQAAAAAAAAAAAAAACAUGBwQB/8QAMRAAAgEDAQYDCAMAAwAAAAAAAAECAwQFBgcREiFBUTFhwRQyUmJxkaGxEyQzFSOB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADku2/X2W0zWssVg6itq1xSdarc8Ck1He0ox38l4Pe/oYHZntiuvbo4zWNyqlGs91G+lFRdOXae7cuHz6deXh0TaboK21ti4qE1Qydsm7Ws/B7/GEvle7/z7py3lcbeYjIV7DJW86F1Qlw1Kc1zT9V59QLXTUknFpp800fSfdkG1J4t0cBqOu3YPdC1upv8Aw7Rk/g7Pp9PCgU1JJxaafNNAfQAAAAAAAAAAPDm8vY4LGV8llLiNC1ox3yk+vZJdW+iGby9jgsZXyWUuI0LWjHfKT69kl1b6IlnaNry+1rk+OfFQxtGT9mtd/u/NLvJ/jwXmGZ1Ltk1PkctOvh7t46xhL/poRpwk2u82097fbw/Z3HZnqatqzSNrk7unGFzxSpVuBboylF+K+q3P7k26C0XkdaZZWtonStabTubqS3xpR9ZPovQqvT2FstPYe2xWMpuFtbx3R3ve5N83Jvq297AyIAAAAAAAAAAAAAaTtM2fWetMf/JT4KGWoR/r3G7lJfBPvH9fdPdgBE+Vxt5iMhXsMlbzoXVCXDUpzXNP1Xn1OrbINqTxbo4DUdduwe6FrdTf+HaMn8HZ9Pp4dM2mbPrPWmP/AJKfBQy1CP8AXuN3KS+CfeP6+6cu5XG3mIyFewyVvOhdUJcNSnNc0/VefUC101JJxaafNNH0n3ZBtSeLdHAajrt2D3Qtbqb/AMO0ZP4Oz6fTwoFNSScWmnzTQH0AAAAAPDm8vY4LGV8llLiNC1ox3yk+vZJdW+iGby9jgsZXyWUuI0LWjHfKT69kl1b6IlnaNry+1rk+OfFQxtGT9mtd/u/NLvJ/jwXmDaNry+1rk+OfFQxtGT9mtd/u/NLvJ/jwXn59BaLyOtMsrW0TpWtNp3N1Jb40o+sn0XoNBaLyOtMsrW0TpWtNp3N1Jb40o+sn0XoVRpvAY7TWJo4zFUFSoU1zb5yqS6yk+rYDTeAx2msTRxmKoKlQprm3zlUl1lJ9WzKAAAAAAAAAAAAAAAAAADSdpmz6z1pj/wCSnwUMtQj/AF7jdykvgn3j+vunuwAifK428xGQr2GSt50LqhLhqU5rmn6rz6nVtkG1J4t0cBqOu3YPdC1upv8Aw7Rk/g7Pp9PDpm0zZ9Z60x/8lPgoZahH+vcbuUl8E+8f1905dyuNvMRkK9hkredC6oS4alOa5p+q8+oFrpqSTi00+aaPpPuyDak8W6OA1HXbsHuha3U3/h2jJ/B2fT6eFApqSTi00+aaA+nhzeXscFjK+SylxGha0Y75SfXskurfRDN5exwWMr5LKXEaFrRjvlJ9eyS6t9ESztG15fa1yfHPioY2jJ+zWu/3fml3k/x4LzBtG15fa1yfHPioY2jJ+zWu/wB35pd5P8eC8/PoLReR1plla2idK1ptO5upLfGlH1k+i9BoLReR1plla2idK1ptO5upLfGlH1k+i9CqNN4DHaaxNHGYqgqVCmubfOVSXWUn1bAabwGO01iaOMxVBUqFNc2+cqkuspPq2ZQAAAAAAAAAAAAAAAAAAAAAAAGk7TNn1nrTH/yU+ChlqEf69xu5SXwT7x/X3T3YARPlcbeYjIV7DJW86F1Qlw1Kc1zT9V59TqOynax/wVBYfU1SpUx9OL9muEnOdHcvca8XHt2+nh1HaZs+s9aY/wDkp8FDLUI/17jdykvgn3j+vunLuVxt5iMhXsMlbzoXVCXDUpzXNP1Xn1A2TaNry+1rk+OfFQxtGT9mtd/u/NLvJ/jwXn59BaLyOtMsrW0TpWtNp3N1Jb40o+sn0XoNBaLyOtMsrW0TpWtNp3N1Jb40o+sn0XoVRpvAY7TWJo4zFUFSoU1zb5yqS6yk+rYDTeAx2msTRxmKoKlQprm3zlUl1lJ9WzKAAAAAAAAAAAAAAAAAAAAAAAAAAAAANd1TojT2q506masFVrUlwwrQnKE0uzafNfU2IAY/BYTG6fx8LDD2kLa2g9/BHe233bfNvzZkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9k=" alt="">
+            </div>
+            <button>Login to Pro</button>
+        </div>
+    </div>
+    <div class="body-container">
+        <div>
+            <img src="https://coinswitch.co/_next/static/media/logo.01525825.svg" alt="">
+        </div>
+        <div>
+            <h1>Your Innovation</h1>
+            <h1>Our Fuel</h1>
+        </div>
+        <div>
+            <p>CoinSwitch Ventures invests in the most promising Web3 and</p>
+            <p>blockchain projects in India. Does that sound like you?</p>
+        </div>
+        <div>
+            <button>Apply Now</button>
+        </div>
+    </div>
+</body>
+</html>
