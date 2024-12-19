@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive DOM Manipulation</title>
+    <style>
+      .interactive-box {
+        height: auto;
+        width: 400px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        margin: auto;
+        border-radius: 15px;
+        padding: 20px;
+        /* background: linear-gradient(135deg, #f6d365, #fda085); */
+        background: radial-gradient(circle, #f6d365, #fda085);
+      }
+
+      input {
+        width: 300px;
+        height: 30px;
+        margin-bottom: 30px;
+      }
+
+      button {
+        width: 250px;
+        height: 50px;
+        color: white;
+        background-color: lightseagreen;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 30px;
+      }
+
+      .content-box {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: deeppink;
+        border-radius: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="interactive-box">
+      <input type="text" placeholder="Enter Color Name" />
+      <input type="text" placeholder="Enter Text Content" />
+      <button>Change Background</button>
+      <button>Update Text</button>
+      <div class="content-box">Manipulate Me!</div>
+    </div>
+    <script>
+      const colorInput = document.querySelector('input:nth-of-type(1)');
+      const textInput = document.querySelector('input:nth-of-type(2)');
+      const changeColorBtn = document.querySelector('button:nth-of-type(1)');
+      const updateTextBtn = document.querySelector('button:nth-of-type(2)');
+      const contentBox = document.querySelector('.content-box');
+
+      function isValidColor(color) {
+        if (!color) {
+          return false;
+        }
+        const option = new Option();
+        option.style.color = color;
+        return option.style.color !== '';
+      }
+
+      changeColorBtn.addEventListener('click', () => {
+        const color = colorInput.value.trim();
+        if (!isValidColor(color)) {
+          alert('Invalid color name!');
+        } else {
+          contentBox.style.backgroundColor = color;
+        }
+      });
+
+      updateTextBtn.addEventListener('click', () => {
+        const text = textInput.value.trim();
+        if (!text) {
+          alert('Please enter some text!');
+        } else {
+          contentBox.textContent = text;
+        }
+      });
+    </script>
+  </body>
+</html>
